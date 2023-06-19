@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
-import Home from './components/Home.tsx'
-import About from './components/About.tsx'
-import Services from './components/Services.tsx'
-import ServiceArea from './components/ServiceArea.tsx'
-import Contact from './components/Contact.tsx'
-import Gallery from './components/Gallery.tsx'
+import { Home } from './components/home'
+import { About } from './components/about'
+import { Services } from './components/services'
+import { ServiceArea } from './components/service_area'
+import { Contact } from './components/contact'
+import { Gallery } from './components/gallery'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
