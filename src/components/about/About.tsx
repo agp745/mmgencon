@@ -1,6 +1,6 @@
 
 
-export default function About() {
+export function About() {
 
     return (
         <>

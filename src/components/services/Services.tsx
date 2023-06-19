@@ -1,6 +1,6 @@
 
 
-export default function Services() {
+export function Services() {
 
     return (
         <>

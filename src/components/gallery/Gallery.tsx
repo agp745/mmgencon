@@ -1,6 +1,6 @@
 
 
-export default function Gallery() {
+export function Gallery() {
 
     return (
         <>
