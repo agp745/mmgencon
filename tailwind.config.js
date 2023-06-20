@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'mmgreen': 'hsl(129,30%,45%)',
+        'mmgreen-dark': 'rgba(52,97,58,1)',
+      }
+    },
   },
   plugins: [],
 }
