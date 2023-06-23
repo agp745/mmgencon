@@ -5,3 +5,12 @@ export interface Service {
     type: ServiceType
     isOffered: boolean
 }
+
+export interface Place {
+    address: string,
+    description: string | null,
+    coordinates: {
+        lat: number,
+        lng: number,
+    }
+}
