@@ -118,37 +118,37 @@ const handymanServices: Service[] = [
     },
     {
         service: 'install  a/c  thermostats',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
     {
         service: 'install water heaters',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
     {
         service: 'run new plumbing',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
     {
         service: 'replace windows or screens',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
     {
         service: 'gardening or landscaping',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
     {
         service: 'we do not do haul aways',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
     {
         service: 'any work requiring permits',
-        type: null,
+        type: 'handyman-not_offered',
         isOffered: false
     },
 ]
@@ -236,17 +236,17 @@ const remodelsRenovations: Service[] = [
     },
     {
         service: 'stucco',
-        type: 'kitchen and bath',
+        type: 'remodels-not_offered',
         isOffered: false
     },
     {
         service: 'stain concrete',
-        type: 'kitchen and bath',
+        type: 'remodels-not_offered',
         isOffered: false
     },
     {
         service: 'make adjustments to custom cabinets',
-        type: 'kitchen and bath',
+        type: 'remodels-not_offered',
         isOffered: false
     },
 ]
