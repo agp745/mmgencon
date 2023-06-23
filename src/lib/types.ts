@@ -1,3 +1,5 @@
+export type ClientPath = '/home' | '/about' | '/services' | '/service-area' | '/contact' | '/gallery' 
+
 export type ServiceType = 'repairs' | 'minor plumbing' | 'minor electrical' | 'installations' | 'other'| 'kitchen and bath' | 'handyman-not_offered' | 'remodels-not_offered'
 
 export interface Service {

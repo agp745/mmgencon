@@ -46,7 +46,7 @@ export function Home() {
 
     return (
         <main className="pb-20">
-        <section className="flex flex-col items-center text-center h-screen">
+        <section className="flex flex-col items-center text-center h-screen SHOW_CONTENT">
             <h1 className="mt-48 text-5xl text-center font-semibold">MM General Contracting & Handyman Services</h1>
             <div className="CERTIFICATIONS border-b-2 border-black">
                 <h2 className="mt-9 text-4xl font-light">INSURED AND CERTIFED</h2>
