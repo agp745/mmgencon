@@ -27,7 +27,7 @@ export function Services() {
             />
             <HandymanSection serviceArray={handymanServices}/>
             <SectionHeading 
-                title="Remodels and Renovations"
+                title="Remodels and Rennovations"
                 subtitle="Kitchen and Bath"
             />
             <input 

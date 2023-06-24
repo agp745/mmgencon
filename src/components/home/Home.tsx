@@ -15,7 +15,7 @@ function HowItWorks() {
                 // Icon={<HomeIcon className='w-10 h-10 text-neutral-700' />}
             />
             <Card 
-                mainText="2. email your scope of work, be detailed as possible."
+                mainText="2. Request your FREE online quote."
                 subText="please email your information: address, scope of work, and photos if possible."
                 link={undefined}
                 // Icon={<HomeIcon className='w-10 h-10 text-neutral-700' />}
@@ -47,7 +47,7 @@ export function Home() {
     return (
         <main className="pb-20">
         <section className="flex flex-col items-center text-center h-screen SHOW_CONTENT">
-            <h1 className="mt-48 text-5xl text-center font-semibold">MM General Contracting & Handyman Services</h1>
+            <h1 className="mt-48 text-5xl text-center font-semibold">MM General Contracting</h1>
             <div className="CERTIFICATIONS border-b-2 border-black">
                 <h2 className="mt-9 text-4xl font-light">INSURED AND CERTIFED</h2>
                 <div className="mt-1 flex justify-center gap-2 text-3xl font-black pb-2">
