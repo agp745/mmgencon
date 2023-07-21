@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
-import { Home } from './components/home'
-import { About } from './components/about'
-import { Services } from './components/services'
-import { ServiceArea } from './components/service_area'
-import { Contact } from './components/contact'
-import { Gallery } from './components/gallery'
+import { Home } from './pages/home/index.ts'
+import { About } from './pages/about/index.ts'
+import { Services } from './pages/services/index.ts'
+import { ServiceArea } from './pages/service_area/index.ts'
+import { Contact } from './pages/contact/index.ts'
+import { Gallery } from './pages/gallery/index.ts'
+import Test from './test.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -22,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path='/service-area' element={<ServiceArea />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/gallery' element={<Gallery />} />
-          
+          <Route path='/test' element={<Test />} />
         </Routes>
       </App>
     </BrowserRouter>

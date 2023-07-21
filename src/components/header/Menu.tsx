@@ -24,8 +24,8 @@ export function Menu() {
 
     return (
         <nav className="flex justify-between py-2 px-5 bg-white">
-            <img src="/vite.svg" alt="logo" />
-            <div className=""></div>
+            <img src="/assets/logo-enhanced.png" alt="logo" className="h-full w-12"/>
+            <div className="text-2xl font-bold tracking-wide">MM General Contracting</div>
             <div className="flex gap-5">
                 {path === "/home" ? (
                         <div className="text-green-600">Home</div>
