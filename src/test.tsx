@@ -20,8 +20,8 @@ export default function Test() {
     ]
 
     return (
-        <main className="h-screen w-screen relative">
-            <h1 className="">"Making Spaces Better"</h1>
+        <main className="h-screen w-screen relative SHOW_CONTENT">
+            {/* <h1 className="">"Making Spaces Better"</h1> */}
             <Slideshow slides={heros} />
         </main>
     )

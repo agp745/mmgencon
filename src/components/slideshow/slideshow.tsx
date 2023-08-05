@@ -35,8 +35,13 @@ export function Slideshow({ slides }: SlideshowProps) {
                         <div className="relative">
                             <img src={slide.photo} alt={`${slide.type} slide`} className="w-full h-[50rem]" />
                             <div className="absolute top-1/2 right-0 left-0 flex justify-center">
-                                <p className="uppercase text-5xl tracking-[0.5rem] font-light bg-neutral-100/75 py-10 px-40 -mt-10">{slide.type} services</p>
-                                {/* <p className="uppercase text-4xl bg-black text-white">insured, certified HABE, MBE, & HUB</p> */}
+                                <div className="flex flex-col">
+                                    <div className="uppercase text-5xl tracking-[0.5rem] font-light bg-neutral-100/75 py-10 px-40 -mt-10">{slide.type} services</div>
+                                    <div className="uppercase text-4xl bg-black text-white text-center py-5 flex flex-col justify-center items-center">
+                                        <p className="text-2xl">insured | certified</p>
+                                        <p className="font-bold">HABE <span className="font-light">•</span> MBE <span className="font-light">•</span> HUB</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

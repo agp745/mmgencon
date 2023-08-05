@@ -23,10 +23,13 @@ export function Menu() {
     const linkStyles = 'active:scale-95 hover:underline hover:underline-offset-4'
 
     return (
-        <nav className="flex justify-between py-2 px-5 bg-white">
-            <img src="/assets/logo-enhanced.png" alt="logo" className="h-full w-12"/>
-            <div className="text-2xl font-bold tracking-wide">MM General Contracting</div>
-            <div className="flex gap-5">
+        <nav className="flex justify-between py-2 px-5 bg-white bg-opacity-80">
+            <img src="/assets/logo-enhanced.png" alt="logo" className="h-full w-20 pt-1"/>
+            <div className="font-bold tracking-wide flex flex-col justify-center text-center">
+                <h1 className="text-3xl">MM General Contracting</h1>
+                <p className="text-lg font-light tracking-widest">making spaces better</p>
+            </div>
+            <div className="flex gap-5 self-end">
                 {path === "/home" ? (
                         <div className="text-green-600">Home</div>
                     ) : (
@@ -57,7 +60,10 @@ export function Menu() {
                     ) : (
                         <MenuLink path="/gallery" handleClick={handleClick} styles={linkStyles} />
                 )}
-                <QuoteButton extraStyles=""/>
+                <div>|</div>
+                <div>
+                    <a className="text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in">Get a Quote</a>
+                </div>
             </div>
         </nav>
     )
