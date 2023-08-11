@@ -88,11 +88,11 @@ export function MobileMenu() {
                         ) : (
                             <MenuLink path="/service-area" handleClick={handleClick} styles={linkStyles} />
                         )}
-                        {path === "/contact" ? (
+                        {/* {path === "/contact" ? (
                             <div className={currentPageLinkColor}>Contact</div>
                         ) : (
                             <MenuLink path="/contact" handleClick={handleClick} styles={linkStyles} />
-                        )}
+                        )} */}
                         {path === "/gallery" ? (
                             <div className={currentPageLinkColor}>Gallery</div>
                         ) : (

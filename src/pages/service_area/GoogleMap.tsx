@@ -17,7 +17,7 @@ export function ServiceMap() {
 
     const { isLoaded, loadError } = useJsApiLoader({
         id: 'google-maps-script',
-        googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+        googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
     })
     if (loadError) console.log(loadError)
 
@@ -35,12 +35,13 @@ export function ServiceMap() {
 
     //navbar=3rem footer=7rem
     return (
-        <section className='w-screen h-[calc(100vh-10rem)] mt-12'>
+        <section className='w-screen h-[calc(100vh-10rem)] mt-20'>
         {isLoaded &&
             <GoogleMap
                 zoom={7}
                 center={center}
                 mapContainerClassName='w-full h-full'
+                
             >
                 {markers}
                 {selectedPlace && 
