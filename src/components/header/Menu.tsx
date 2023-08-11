@@ -1,30 +1,41 @@
 import { useState, useEffect } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import type { ClientPath } from "@lib/types"
 import { MenuLink } from "./MenuLink"
-import { QuoteButton } from "./QuoteButton"
+
+import { useSelector, useDispatch } from "react-redux"
+import { updatePath } from "../../app/pathSlice"
+import type { RootState } from "../../app/store"
 
 export function Menu() {
 
-    const [isClicked, setIsClicked] = useState<boolean>(false)
-    const [path, setPath] = useState<string | null>(null)
-
     const { pathname } = useLocation()
+    const dispatch = useDispatch()
+
+    const path = useSelector((state: RootState) => state.path.pathname)
+    const [isClicked, setIsClicked] = useState<boolean>(false)
+    const [bgOpacity, setBgOpacity] = useState<string>("")
+    
 
     useEffect(() => {
-        setPath(pathname)
+        dispatch(updatePath(pathname))
+        if(path === '/home') {
+            setBgOpacity("bg-opacity-80")
+        } else {
+            setBgOpacity("bg-opacity-100")
+        }
     }, [path])
 
     const handleClick = (page: ClientPath) => {
         setIsClicked(!isClicked)
-        setPath(page)
+        dispatch(updatePath(page))
     }
 
     const linkStyles = 'active:scale-95 hover:underline hover:underline-offset-4'
     const currentPageLinkColor = 'text-sky-600 font-semibold'
 
     return (
-        <nav className="flex justify-between py-2 px-5 bg-white bg-opacity-80">
+        <nav className={`flex justify-between py-2 px-5 bg-white ${bgOpacity}`}>
             <img src="/assets/logo-enhanced.png" alt="logo" className="h-full w-20 pt-1"/>
             <div className="font-bold tracking-wide flex flex-col justify-center text-center">
                 <h1 className="text-3xl">MM General Contracting</h1>

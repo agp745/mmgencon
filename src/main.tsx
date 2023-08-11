@@ -9,11 +9,15 @@ import { Services } from './pages/services/index.ts'
 import { ServiceArea } from './pages/service_area/index.ts'
 import { Contact } from './pages/contact/index.ts'
 import { Gallery } from './pages/gallery/index.ts'
-import Test from './test.tsx'
+
+import { store } from './app/store'
+import { Provider } from 'react-redux'
+// import Test from './test.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
+    <Provider store={store}>
       <App>
         <Routes>
           <Route path='/' element={<Navigate to='/home' replace/>} />
@@ -23,9 +27,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path='/service-area' element={<ServiceArea />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/gallery' element={<Gallery />} />
-          <Route path='/test' element={<Test />} />
+          {/* <Route path='/test' element={<Test />} /> */}
         </Routes>
       </App>
+    </Provider>
     </BrowserRouter>
   </React.StrictMode>,
 )

@@ -5,20 +5,26 @@ import type { ClientPath } from "@lib/types"
 import { MenuLink } from "./MenuLink"
 import { QuoteButton } from "./QuoteButton"
 
+import { useSelector, useDispatch } from "react-redux"
+import { updatePath } from "../../app/pathSlice"
+import type { RootState } from "../../app/store"
+
 export function MobileMenu() {
+
     const [isClicked, setIsClicked] = useState<boolean>(false)
-    const [path, setPath] = useState<string | null>(null)
     const [fadeAnimation, setFadeAnimation] = useState<"SHOW_MENU" | "HIDE_MENU">("SHOW_MENU")
+    const path = useSelector((state: RootState) => state.path.pathname)
 
     const { pathname } = useLocation()
+    const dispatch = useDispatch()
 
     useEffect(() => {
-        setPath(pathname)
+        dispatch(updatePath(pathname))
     }, [path])
 
     const handleClick = (page: ClientPath) => {
         setIsClicked(!isClicked)
-        setPath(page)
+        dispatch(updatePath(page))
     }
 
     const menuFade = () => {

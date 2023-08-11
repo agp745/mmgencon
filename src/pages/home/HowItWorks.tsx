@@ -40,8 +40,7 @@ export function HowItWorks() {
             <div className="SHOW_CONTENT flex flex-col items-center gap-7 py-10">
                 <Card 
                     mainText={<div>1. Ready to get your <span className="font-bold">free</span> quote?</div>}
-                    subText={<div>Click the <span className="font-light italic">Residential Quote</span> button or <span className="text-blue-400 underline">HERE</span> to fill out our form</div>}
-                    // subText="Click the 'Residential Quote' button (or this card) to take you to our form"
+                    subText={<div>Click <span className="font-light italic">Get a Quote</span> in the top right or click <span className="text-blue-400 underline">HERE</span> to fill out our form</div>}
                     link="https://form.jotform.com/230184112380141"
                     Icon={<BanknotesIcon className='w-10 h-10 text-neutral-700' />}
                 />
