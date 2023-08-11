@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline"
-import type { ClientPath } from "@lib/types"
+import type { ClientPath } from "lib/types"
 import { MenuLink } from "./MenuLink"
 import { QuoteButton } from "./QuoteButton"
 

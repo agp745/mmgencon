@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { GoogleMap, useJsApiLoader, MarkerF, InfoWindowF } from '@react-google-maps/api'
-import type { Place } from '@lib/types';
-import { locations } from '@lib/locations';
+import type { Place } from 'lib/types';
+import { locations } from '../../lib/locations';
 
 export function ServiceMap() {
 

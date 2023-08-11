@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import type { ClientPath } from "@lib/types"
+import type { ClientPath } from "lib/types"
 
 interface MenuLinkProps {
     path: ClientPath,

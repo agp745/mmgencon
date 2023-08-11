@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
-import type { ClientPath } from "@lib/types"
+import type { ClientPath } from "lib/types"
+// import type { ClientPath } from "@lib/types"
 import { MenuLink } from "./MenuLink"
 
 import { useSelector, useDispatch } from "react-redux"
