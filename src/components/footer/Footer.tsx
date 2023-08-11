@@ -8,6 +8,7 @@ export function Footer() {
                 <div className="flex flex-col text-lg text-slate-700">
                     <p>Houston, TX</p>
                     <p>(713) 319-7492</p>
+                    <p>mike.a@mmgencon.com</p>
                 </div>
                 <div className="flex gap-2">
                     <a 
