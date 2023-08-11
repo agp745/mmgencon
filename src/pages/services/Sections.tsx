@@ -1,6 +1,6 @@
 // import { useState } from "react"
 // import { handymanServices, remodelsRenovations } from "@lib/services"
-import type { Service, ServiceType } from "@lib/types"
+import type { Service, ServiceType } from "lib/types"
 
 interface SectionHeaderProps {
     title: string,
