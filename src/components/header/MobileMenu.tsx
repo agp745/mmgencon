@@ -50,6 +50,7 @@ export function MobileMenu() {
     }
 
     const linkStyles = "active:scale-95 hover:underline hover:underline-offset-4"
+    const currentPageLinkColor = 'text-sky-600 font-semibold'
 
     const VisibleMenu = () => {
         return (
@@ -62,32 +63,32 @@ export function MobileMenu() {
                     </div>
                     <div className="flex flex-col items-center gap-3 text-2xl font-extralight">
                         {path === "/home" ? (
-                            <div className="text-green-600">Home</div>
+                            <div className={currentPageLinkColor}>Home</div>
                         ) : (
                             <MenuLink path="/home" handleClick={handleClick}  styles={linkStyles} />
                         )}
                         {path === "/about" ? (
-                            <div className="text-green-600">About</div>
+                            <div className={currentPageLinkColor}>About</div>
                         ) : (
                             <MenuLink path="/about" handleClick={handleClick} styles={linkStyles} />
                         )}
                         {path === "/services" ? (
-                            <div className="text-green-600">Services</div>
+                            <div className={currentPageLinkColor}>Services</div>
                         ) : (
                             <MenuLink path="/services" handleClick={handleClick} styles={linkStyles} />
                         )}
                         {path === "/service-area" ? (
-                            <div className="text-green-600">Service Area</div>
+                            <div className={currentPageLinkColor}>Service Area</div>
                         ) : (
                             <MenuLink path="/service-area" handleClick={handleClick} styles={linkStyles} />
                         )}
                         {path === "/contact" ? (
-                            <div className="text-green-600">Contact</div>
+                            <div className={currentPageLinkColor}>Contact</div>
                         ) : (
                             <MenuLink path="/contact" handleClick={handleClick} styles={linkStyles} />
                         )}
                         {path === "/gallery" ? (
-                            <div className="text-green-600">Gallery</div>
+                            <div className={currentPageLinkColor}>Gallery</div>
                         ) : (
                             <MenuLink path="/gallery" handleClick={handleClick} styles={linkStyles} />
                         )}

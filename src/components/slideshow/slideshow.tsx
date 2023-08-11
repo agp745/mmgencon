@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
-import type { MainHero } from "test"
+import type { MainHero } from "../../pages/home/Home"
 
 interface SlideshowProps {
     slides: MainHero[]
@@ -63,7 +63,7 @@ export function Slideshow({ slides }: SlideshowProps) {
         <div className="w-full flex justify-center gap-1 pt-1">
             {slides.map((_, index) => {
                 return (
-                    <div className={`w-3 h-3 rounded-full ${currentSlide === (index + 1) ? "bg-green-500" : "bg-neutral-600"}`}></div>
+                    <div className={`w-3 h-3 rounded-full ${currentSlide === (index + 1) ? "bg-blue-500" : "bg-neutral-600"}`}></div>
                 )
             })}
         </div>

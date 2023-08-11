@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         'mmgreen': 'hsl(129,30%,45%)',
-        'mmgreen-light': 'hsl(130,40%,90%)',
-        'mmgreen-dark': 'rgba(52,97,58,1)',
+        'mm-light': 'rgb(148 163 184)', //bg-slate-400
+        'mm-dark': 'rgb(100 116 139)', //bg-slate-500
       }
     },
   },
