@@ -80,8 +80,12 @@ export function HowItWorks() {
                     <Card 
                         mainText="Tell us what you would like to get done."
                         subText={<a className="underline text-blue-400 font-light hover:text-blue-500 transition-colors duration-75 ease-in" href="mailto: mike.a@mmgencon.com">mike.a@mmgencon.com</a>}
-                        />
-                    <div className="text-center w-1/3">If you need a GC, to build a space for your business, we handle all construction services from tenant improvements to new builds. Our on-site management crews are ready to serve you. Lets talk about your next project.</div>
+                    />
+                    <Card 
+                        mainText="Our on-site management crews are ready to serve you. Lets talk about your next project."
+                        subText="If you need a GC, to build a space for your business, we handle all construction services from tenant improvements to new builds"
+                    />
+                    {/* <div className="text-center text-lg w-1/3">If you need a GC, to build a space for your business, we handle all construction services from tenant improvements to new builds. Our on-site management crews are ready to serve you. Lets talk about your next project.</div> */}
                     <div className="flex">
                         <p>click</p>&nbsp;
                         <a href="/services" className="flex text-blue-400 underline hover:text-blue-500 transition-colors duration-75 ease-in">here <ArrowTopRightOnSquareIcon className="w-4 h-4 self-end mb-1" /></a>&nbsp;
