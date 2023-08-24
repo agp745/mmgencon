@@ -18,7 +18,7 @@ export function GalleryCardLeft({src, alt, title, description, location}: Galler
                 />
             </div>
             <div className="flex flex-col items-start sm:w-1/2 w-1/3 bg-sky-700/10 sm:pl-10 pl-2 font-light pt-3 text-left">
-                <h1 className="uppercase tracking-widest sm:text-3xl text-xl">{title}</h1>
+                <h1 className="uppercase tracking-wider sm:text-3xl text-lg">{title}</h1>
                 <h2 className="sm:text-xl text-lg font-extralight tracking-wider">{location ? location : ''}</h2>
                 <p className="text-lg mt-2">{description ? description : ''}</p>
             </div>
@@ -31,7 +31,7 @@ export function GalleryCardRight({src, alt, title, description, location}: Galle
     return (
         <section className="flex">
             <div className="flex flex-col items-end sm:gap-0 gap-2 sm:w-1/2 w-1/3 bg-slate-700/10 sm:pr-10 pr-2 font-light pt-3 text-right">
-                <h1 className="uppercase tracking-widest sm:text-3xl text-xl">{title}</h1>
+                <h1 className="uppercase tracking-wider sm:text-3xl text-xl">{title}</h1>
                 <h2 className="sm:text-xl text-lg font-extralight tracking-wider">{location ? location : ''}</h2>
                 <p className="text-lg">{description ? description : ''}</p>
             </div>
