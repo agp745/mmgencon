@@ -33,7 +33,7 @@ export function Slideshow({ slides }: SlideshowProps) {
                 {slides.map((slide, index) => (
                     <div key={index} className="w-full flex-shrink-0 overflow-hidden text-center">
                         <div className="relative">
-                            <img src={slide.photo} alt={`${slide.type} slide`} className="w-full h-[50rem]" />
+                            <img src={slide.photo} alt={`${slide.type} slide`} className="w-full h-[50rem] object-cover" />
                             <div className="absolute top-1/3 sm:top-1/2 right-0 left-0 flex justify-center ">
                                 <div className="flex flex-col">
                                     <div className="uppercase text-5xl tracking-[0.5rem] font-light bg-neutral-100/75 py-10 px-40 -mt-10">{slide.type} services</div>
