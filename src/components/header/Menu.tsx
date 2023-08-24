@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom"
 import type { ClientPath } from "lib/types"
 // import type { ClientPath } from "@lib/types"
 import { MenuLink } from "./MenuLink"
+import { QuotePopover } from "../quoteDropdown"
 
 import { useSelector, useDispatch } from "react-redux"
 import { updatePath } from "../../app/pathSlice"
@@ -63,11 +64,6 @@ export function Menu() {
                     ) : (
                         <MenuLink path="/service-area" handleClick={handleClick} styles={linkStyles} />
                 )}
-                {/* {path === "/contact" ? (
-                        <div className={currentPageLinkColor}>Contact</div>
-                    ) : (
-                        <MenuLink path="/contact" handleClick={handleClick} styles={linkStyles} />
-                )} */}
                 {path === "/gallery" ? (
                         <div className={currentPageLinkColor}>Gallery</div>
                     ) : (
@@ -75,7 +71,9 @@ export function Menu() {
                 )}
                 <div>|</div>
                 <div>
-                    <a className="text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in">Get a Quote</a>
+                    <QuotePopover 
+                        Trigger = {<a className="text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in">Get a Quote</a>}                    
+                    />
                 </div>
             </div>
         </nav>
