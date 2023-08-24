@@ -14,7 +14,7 @@ export function Footer() {
 
                 <img src="/assets/logo-no_background.png" alt="mmgencon logo" className="w-14"/>
 
-                <div className="flex gap-2">
+                <div className="flex sm:flex-row flex-col gap-2">
                     <a 
                         href="https://www.linkedin.com/in/michael-morales-4313343a/" 
                         target="_blank"
