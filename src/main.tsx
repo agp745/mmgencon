@@ -9,6 +9,7 @@ import { Services } from './pages/services/index.ts'
 import { ServiceArea } from './pages/service_area/index.ts'
 import { Contact } from './pages/contact/index.ts'
 import { Gallery } from './pages/gallery/index.ts'
+import { Careers } from './pages/careers/index.ts'
 
 import { store } from './app/store'
 import { Provider } from 'react-redux'
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path='/service-area' element={<ServiceArea />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/gallery' element={<Gallery />} />
+          <Route path='/careers' element={<Careers />} />
           {/* <Route path='/test' element={<Test />} /> */}
         </Routes>
       </App>

@@ -11,7 +11,7 @@ export function Services() {
             We handle every step of your remodel or renovation, from concept to
             materials to reality.
           </p>
-          <div className="mt-2 flex flex-col items-center justify-center border-2 border-black bg-blue-100/90 p-5 text-4xl font-light tracking-widest text-black">
+          <div className="mt-2 flex flex-col items-center justify-center border-2 border-black bg-slate-100/90 p-5 text-4xl font-light tracking-widest text-black">
             <ul className="flex justify-center gap-4">
                 <li>painting</li>
                 <li>fencing</li>
@@ -25,7 +25,7 @@ export function Services() {
             </p>
           </div>
           <button className="rounded bg-blue-500 px-3 py-1 text-xl transition-all duration-75 ease-in-out hover:bg-blue-400">
-            <a href="https://form.jotform.com/230184112380141">
+            <a href="https://form.jotform.com/230184112380141" target="_blank">
               Request a Free Quote
             </a>
           </button>

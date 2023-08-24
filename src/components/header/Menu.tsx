@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import type { ClientPath } from "lib/types"
-// import type { ClientPath } from "@lib/types"
 import { MenuLink } from "./MenuLink"
 import { QuotePopover } from "../quoteDropdown"
 
@@ -70,11 +69,14 @@ export function Menu() {
                         <MenuLink path="/gallery" handleClick={handleClick} styles={linkStyles} />
                 )}
                 <div>|</div>
-                <div>
-                    <QuotePopover 
-                        Trigger = {<a className="text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in">Get a Quote</a>}                    
-                    />
-                </div>
+                <QuotePopover 
+                    Trigger = {<a className="text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in -mt-1">Get a Quote</a>}                    
+                />
+                {path === "/careers" ? (
+                        <div className={currentPageLinkColor}>Careers</div>
+                    ) : (
+                        <MenuLink path="/careers" handleClick={handleClick} styles={linkStyles} />
+                )}
             </div>
         </nav>
     )
