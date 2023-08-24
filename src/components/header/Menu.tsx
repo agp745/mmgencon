@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom"
 import type { ClientPath } from "lib/types"
 import { MenuLink } from "./MenuLink"
 import { QuotePopover } from "../quoteDropdown"
+import { ChevronDownIcon } from "@heroicons/react/24/outline"
 
 import { useSelector, useDispatch } from "react-redux"
 import { updatePath } from "../../app/pathSlice"
@@ -38,8 +39,8 @@ export function Menu() {
     return (
         <nav className={`flex justify-between py-2 px-5 bg-white ${bgOpacity}`}>
             <img src="/assets/logo-enhanced.png" alt="logo" className="h-full w-20 pt-1"/>
-            <div className="font-bold tracking-wide flex flex-col justify-center text-center">
-                <h1 className="text-3xl">MM General Contracting</h1>
+            <div className="flex flex-col justify-center text-center text-slate-800">
+                <h1 className="text-3xl font-normal tracking-wide ">MM General Contracting</h1>
                 <p className="text-lg font-light tracking-widest">making spaces better</p>
             </div>
             <div className="flex gap-5 self-end">
@@ -70,7 +71,7 @@ export function Menu() {
                 )}
                 <div>|</div>
                 <QuotePopover 
-                    Trigger = {<a className="text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in -mt-1">Get a Quote</a>}                    
+                    Trigger = {<a className="flex gap-1 text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in -mt-1"><p>Get a Quote</p><ChevronDownIcon className="w-4 h-4 mt-1" /></a>}                    
                 />
                 {path === "/careers" ? (
                         <div className={currentPageLinkColor}>Careers</div>
