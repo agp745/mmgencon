@@ -1,9 +1,6 @@
 import { GalleryCardLeft, GalleryCardRight } from "../../components/galleryCard"
-import { useState } from "react"
 
 export function Gallery() {
-
-    const [galleryType, setGalleryType] = useState<'residential' | 'commercial'>('residential')
 
     return (
         <main className="mt-20 text-center">

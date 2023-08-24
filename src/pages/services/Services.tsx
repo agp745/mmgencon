@@ -3,10 +3,10 @@ export function Services() {
 
     return (
         <main className="text-slate-100">
-            <section className="min-h-screen bg-black bg-cover flex flex-col items-center">
-                <div className="mt-24 text-center w-[80%] border-b-4 border-b-slate-100 py-10">
-                    <h2 className="text-4xl font-bold">Residential Services</h2>
-                    <h3 className="text-2xl font-light">Luxury or Custom remodels and renovations</h3>
+            <section className="min-h-screen bg-blue-900 bg-cover flex flex-col items-center mt-20">
+                <div className="flex flex-col items-center text-center bg-slate-100/90 p-5 text-4xl font-light border-2 border-black tracking-widest text-black mt-2">
+                    <h1>Residential Services</h1>
+                    <p className="text-xl">Luxury or Custom remodels and renovations</p>
                 </div>
                 <div className="text-center w-[80%] border-b-4 border-b-slate-100 flex flex-col items-center gap-10 pb-10">
                     <p className="text-3xl text-slate-100 font-semibold mt-10 w-2/3">We handle every step of your remodel or renovation, from concept to materials to reality.</p>
@@ -28,8 +28,9 @@ export function Services() {
                 
             </section>
             <section className="min-h-screen bg-slate-800 bg-contain flex flex-col items-center">
-                <div className="text-center w-[80%] border-b-4 border-b-slate-100 py-10">
-                    <h2 className="text-4xl font-bold">Commercial Services</h2>
+            <div className="flex flex-col items-center text-center bg-slate-100/90 p-5 text-4xl font-light border-2 border-black tracking-widest text-black mt-2">
+                    <h1>Commercial Services</h1>
+                    {/* <p className="text-xl">Luxury or Custom remodels and renovations</p> */}
                 </div>
                 <div className="text-center w-[80%] border-b-4 border-b-slate-100 flex flex-col items-center gap-10 pb-10">
                     <p className="text-3xl text-slate-100 font-semibold mt-10 w-2/3">If you need to build a space for your business, we handle all construction services from tenant improvements to new builds.</p>
