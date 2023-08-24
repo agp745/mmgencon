@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom"
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline"
 import type { ClientPath } from "lib/types"
 import { MenuLink } from "./MenuLink"
-import { QuoteButton } from "./QuoteButton"
+
 
 import { useSelector, useDispatch } from "react-redux"
 import { updatePath } from "../../app/pathSlice"
@@ -43,8 +43,12 @@ export function MobileMenu() {
         return (
             //removed `lg:hidden` from <section> styles
             <section className="MOBILE-MENU justify-between py-2 px-5 flex bg-white">
-                <img src="/assets/react.svg" alt="logo" />
-                <QuoteButton extraStyles=""/>
+                <a href="/home"><img src="/assets/logo-enhanced.png" alt="logo" className="w-12"/></a>
+                
+                <div className="font-light tracking-wider text-xl">
+                    MM General Contracting
+                </div>
+
                 <button
                     onClick={menuFade}
                     className="HAMBURGER-ICON space-y-1.5"
@@ -61,12 +65,13 @@ export function MobileMenu() {
     const VisibleMenu = () => {
         return (
             <menu className={`fixed top-0 left-0 bottom-0 right-0 bg-white w-full h-full ${fadeAnimation}`}>
-                <section className="flex flex-col items-center">
+                <section className="flex flex-col items-center justify-between">
                     <div className="flex justify-end w-full py-2 px-5">
                         <button onClick={menuFade}>
                             <XMarkIcon className="text-black w-7 h-7"/>
                         </button>
                     </div>
+
                     <div className="flex flex-col items-center gap-3 text-2xl font-extralight">
                         {path === "/home" ? (
                             <div className={currentPageLinkColor}>Home</div>
@@ -88,17 +93,28 @@ export function MobileMenu() {
                         ) : (
                             <MenuLink path="/service-area" handleClick={handleClick} styles={linkStyles} />
                         )}
-                        {/* {path === "/contact" ? (
-                            <div className={currentPageLinkColor}>Contact</div>
-                        ) : (
-                            <MenuLink path="/contact" handleClick={handleClick} styles={linkStyles} />
-                        )} */}
                         {path === "/gallery" ? (
                             <div className={currentPageLinkColor}>Gallery</div>
                         ) : (
                             <MenuLink path="/gallery" handleClick={handleClick} styles={linkStyles} />
                         )}
-                        <QuoteButton extraStyles="mt-10" />
+                        {path === "/careers" ? (
+                            <div className={currentPageLinkColor}>Careers</div>
+                        ) : (
+                            <MenuLink path="/careers" handleClick={handleClick} styles={linkStyles} />
+                        )}
+                    </div>
+
+                    <div className="flex flex-col items-center gap-3 border-t border-slate-300 text-2xl font-extralight mt-3 p-3">
+                            <a href="https://form.jotform.com/230184112380141" target="_blank" className="hover:bg-blue-100 hover:px-2 hover:py-1 hover:rounded transition-all duration-75 ease-in">Residential Quote</a>
+                            <a href="mailto: mike.a@mmgencon.com" target="_blank" className="hover:bg-blue-100 hover:px-2 hover:py-1 hover:rounded transition-all duration-75 ease-in">Commercial Quote</a>
+                    </div>
+
+                    <div className="flex flex-col items-center mt-20 p-5">
+                        <img src="/assets/logo-enhanced.png" alt="logo" className="w-20"/>
+                        <p className="tracking-widest font-light pt-2 text-xl">
+                            making spaces better
+                        </p>
                     </div>
                 </section>
             </menu>
