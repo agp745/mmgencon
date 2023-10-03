@@ -99,7 +99,7 @@ export function MobileMenu() {
                             <MenuLink path="/gallery" handleClick={handleClick} styles={linkStyles} />
                         )}
                         {path === "/careers" ? (
-                            <div className={currentPageLinkColor}>Careers</div>
+                            <div className={currentPageLinkColor}>Work with us</div>
                         ) : (
                             <MenuLink path="/careers" handleClick={handleClick} styles={linkStyles} />
                         )}

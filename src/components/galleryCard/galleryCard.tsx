@@ -6,15 +6,18 @@ interface GalleryCardProps {
     location?: string
 }
 
-export function GalleryCardLeft({src, alt, title, description, location}: GalleryCardProps) {
+const imageContainerStyles = 'sm:w-1/2 w-2/3 overflow-hidden bg-no-repeat bg-cover'
 
+export function GalleryCardLeft({src, alt, title, description, location}: GalleryCardProps) {
+    
     return (
         <section className="flex">
-            <div className="sm:w-1/2 w-2/3 overflow-hidden">
+            <div className={`${imageContainerStyles} bg-[url(/assets/mmgencon-pics/resized-20px-${src.slice(0, src.indexOf('.'))}.jpg)]`}>
                 <img
                     src={src}
                     alt={alt ? alt : 'gallery photo'}
                     className=""
+                    loading="lazy"
                 />
             </div>
             <div className="flex flex-col items-start sm:w-1/2 w-1/3 bg-sky-700/10 sm:pl-10 pl-2 font-light pt-3 text-left">
@@ -35,11 +38,12 @@ export function GalleryCardRight({src, alt, title, description, location}: Galle
                 <h2 className="sm:text-xl text-lg font-extralight tracking-wider">{location ? location : ''}</h2>
                 <p className="sm:text-lg text-base mt-2">{description ? description : ''}</p>
             </div>
-            <div className="sm:w-1/2 w-2/3 overflow-hidden">
+            <div className={`${imageContainerStyles} bg-[url(/assets/mmgencon-pics/resized-20px-${src.slice(0, src.indexOf('.'))}.jpg)]`} >
                 <img
                     src={src}
                     alt={alt ? alt : 'gallery photo'}
-                    className=""
+                    className="opacity-0"
+                    loading="lazy"
                 />
             </div>
         </section>

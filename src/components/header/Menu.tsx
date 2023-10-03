@@ -74,7 +74,7 @@ export function Menu() {
                     Trigger = {<a className="flex gap-1 text-blue-500 font-semibold p-1 hover:bg-blue-100/70 rounded-md cursor-pointer transition-all duration-100 ease-in -mt-1"><p>Get a Quote</p><ChevronDownIcon className="w-4 h-4 mt-1" /></a>}                    
                 />
                 {path === "/careers" ? (
-                        <div className={currentPageLinkColor}>Careers</div>
+                        <div className={currentPageLinkColor}>Work with us</div>
                     ) : (
                         <MenuLink path="/careers" handleClick={handleClick} styles={linkStyles} />
                 )}
