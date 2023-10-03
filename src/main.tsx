@@ -14,11 +14,12 @@ import { Careers } from "./pages/careers/index.ts";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
 // import Test from './test.tsx'
-import { Analytics } from "@vercel/analytics/react";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Analytics />
     <BrowserRouter>
       <Provider store={store}>
         <App>
